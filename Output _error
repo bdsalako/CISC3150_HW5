@@ -1,0 +1,4 @@
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	The field Shapes.val is not visible
+
+	at shapes.Driver.main(Driver.java:23)
