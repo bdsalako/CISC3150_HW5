@@ -1,0 +1,16 @@
+package circle;
+
+import shapes.Shapes;
+
+public class Circle extends Shapes{
+	
+	public Circle(double val) {
+		super(val);
+		
+	}
+	public double AreaOfCircle(){
+		double area = Math.PI * val * val;
+		return area;
+		
+	}
+}
