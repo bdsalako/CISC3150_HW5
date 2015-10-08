@@ -1,0 +1,18 @@
+package shapes;
+
+public class Shapes {
+	private double val;
+
+	public Shapes(double val) {
+		super();
+		this.val = val;
+	}
+
+	public double getVal() {
+		return val;
+	}
+
+	public void setVal(int val) {
+		this.val = val;
+	}
+}
