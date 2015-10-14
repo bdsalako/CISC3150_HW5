@@ -2,6 +2,7 @@ package shapes;
 
 import java.util.*;
 
+
 import circle.Circle;
 public class Driver {
 	
@@ -13,11 +14,13 @@ public class Driver {
 		Scanner s = new Scanner(System.in);
 		System.out.print("Enter the value of radius: ");
 		radius = s.nextDouble();
+		
+		
 		Circle circle = new Circle(radius);
 		Square square = new Square(radius);
 		areaOf_Q = circle.AreaOfCircle()/4;
 		areaOfSquare = square.AreaOfSquare();
-		areaOfOverlap = areaOfSquare - Math.abs(areaOfSquare - areaOf_Q);
+		areaOfOverlap = areaOf_Q;
 		areaNotOverlap  = areaOfSquare - areaOf_Q;
 		
 		System.out.println(circle.val);//attempting to access val from parent class in diff packg
@@ -28,6 +31,28 @@ public class Driver {
 		System.out.printf("\nThe area NOT overlap is " + "%2.2f",   areaNotOverlap);
 		System.out.printf("\nRatio of NOToverlap and overlap is 1 to " + "%2.2f", areaOfOverlap/areaNotOverlap);
 		
-		//Generating 4 billion numbers skipped
 		
+		
+		int randCounter = 0;
+		int hitsCounter = 0;
+		double x, y; //coordinates
+		for(int i = 0; i<4000000000L; i++){
+			x = Math.random();
+			y = Math.random();
+			randCounter++;
+			
+			if(x*x + y*y <= 1)
+				hitsCounter++;
+		}
+		System.out.println("\nNumber of points that fall within the squre is "+ hitsCounter);		
+		System.out.println("\nPi is "+ ((double)hitsCounter/(double)randCounter)*4);
+		
+		
+			
 	}
+
+	
+	
+
+}
+
