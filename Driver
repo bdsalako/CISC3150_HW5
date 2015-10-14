@@ -33,10 +33,11 @@ public class Driver {
 		
 		
 		
+		
 		int randCounter = 0;
 		int hitsCounter = 0;
 		double x, y; //coordinates
-		for(int i = 0; i<4000000000L; i++){
+		for(int i = 0; i<4000000; i++){ //my system cannot handle 4 billion iteration. I used 4 million to test run.
 			x = Math.random();
 			y = Math.random();
 			randCounter++;
