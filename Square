@@ -1,0 +1,12 @@
+package shapes;
+
+public class Square extends Shapes {
+	
+	public Square(double val){
+		super(val);
+	}
+
+	public double AreaOfSquare(){
+		return val*val;
+	}
+}
